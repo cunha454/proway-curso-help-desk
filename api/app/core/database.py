@@ -19,4 +19,6 @@ SessionLocal = sessionmaker(
 class Base(DeclarativeBase):
     pass
 
-
+# python -c "import app.models as m; print(sorted(m.Base.metadata.tables))"
+# alembic revision --autogenerate -m "<mensagem>"
+# alembic upgrade head

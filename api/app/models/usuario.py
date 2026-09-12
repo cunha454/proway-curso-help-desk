@@ -3,8 +3,8 @@ from datetime import datetime
 from sqlalchemy import String, Boolean, DateTime, Enum
 from sqlalchemy.orm import Mapped, mapped_column
 
-from api.app.core.enums import Papel
-from api.app.core.tempo import agora
+from app.core.enums import Papel
+from app.core.tempo import agora
 from app.core.database import Base
 
 
@@ -16,5 +16,5 @@ class Usuario(Base):
     email: Mapped[str] = mapped_column(String(160), nullable=False, unique=True, index=True)
     senha_hash: Mapped[str] = mapped_column(String(255), nullable=False)
     papel: Mapped[Papel] = mapped_column(Enum(Papel, native_enum=False, legth=20), nullable=False)
-    ativo: Mapped[bool] = mapped_column(Boolean, default=True, nullable=False)
+    ativa: Mapped[bool] = mapped_column(Boolean, default=True, nullable=False)
     criado_em: Mapped[datetime] = mapped_column(DateTime, default=agora, nullable=False)
