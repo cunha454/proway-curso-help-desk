@@ -1,6 +1,6 @@
 # Dependências da Helpdesk API.
 # Criar um env: `py -m venv env`
-# Ativar o env: Windows: `env\Scripsts\activate` ou Unix: `source env/bin/activate`
+# Ativar o env: Windows: `env\Scripts\activate` ou Unix: `source env/bin/activate`
 # Instale com: pip install -r requirements.txt
 # Versões fixadas (==) para que todos os alunos rodem exatamente o mesmo ambiente.
 
