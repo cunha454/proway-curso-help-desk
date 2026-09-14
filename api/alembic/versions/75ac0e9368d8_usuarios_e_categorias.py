@@ -1,8 +1,8 @@
-"""feat: criado tabelas de usuários e categorias
+"""usuarios e categorias
 
-Revision ID: bd0b7958b26c
+Revision ID: 75ac0e9368d8
 Revises: 
-Create Date: 2026-09-11 20:16:21.584622
+Create Date: 2026-09-14 18:43:44.009210
 
 """
 from typing import Sequence, Union
@@ -12,7 +12,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision: str = 'bd0b7958b26c'
+revision: str = '75ac0e9368d8'
 down_revision: Union[str, Sequence[str], None] = None
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None

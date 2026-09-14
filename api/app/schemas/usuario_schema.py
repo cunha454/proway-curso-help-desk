@@ -5,7 +5,7 @@ from app.core.enums import Papel
 
 class UsuarioCriar(BaseModel):
     nome: str = Field(min_length=2, max_length=20, description="Nome completo")
-    nome: EmailStr = Field(description="E-mail único no sistma")
+    email: EmailStr = Field(description="E-mail único no sistma")
     senha: str = Field(min_length=6, max_length=72, description="Senha entre 6 e 72 caracteres")
     papel: Papel = Field(description="Papel do usuário: ADMIN, ATENDENTE ou SOLICITANTE")
 
