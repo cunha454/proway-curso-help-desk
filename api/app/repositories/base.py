@@ -6,7 +6,7 @@ from sqlalchemy import select
 from app.core.database import Base
 
 
-T= TypeVar("M", bound=Base)
+T = TypeVar("T", bound=Base)
 
 
 class RepositorioBase(Generic[T]):
