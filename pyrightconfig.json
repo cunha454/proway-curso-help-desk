@@ -1,6 +1,0 @@
-{
-  "executionEnvironments": [
-    { "root": "api" }
-  ],
-  "exclude": ["**/node_modules", "**/.venv", "api-spring", "web", "planejamento", "help-desk"]
-}
