@@ -1,6 +1,7 @@
 from datetime import datetime
 
 from pydantic import BaseModel, Field, ConfigDict
+from pydantic.alias_generators import to_camel
 
 from app.core.enums import PrioridadeChamado, SetorChamado, StatusChamado
 
@@ -55,3 +56,9 @@ class TicketResposta(BaseModel):
     data_atualizacao: datetime | None
     solicitante_id: int
     atendente_id: int | None
+
+    model_config = ConfigDict(
+        alias_generator=to_camel,
+        populate_by_name=True,
+        from_attributes=True,
+    )

@@ -8,7 +8,7 @@ import { TicketResposta } from '../../../models/tickets.model';
   templateUrl: './lista.html',
   styleUrl: './lista.scss',
 })
-export class Listar {
+export class Lista {
   ticketService = inject(TicketService);
 
   tickets = signal<TicketResposta[]>([]);
